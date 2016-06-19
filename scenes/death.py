@@ -13,6 +13,8 @@ class Death(Scene):
     def enter(self):
         print Death.death_scene[randint(0,len(self.death_scene)-1)]
         print "\n"
+        print "-|" * 20
+        print "\n"
         print "Would you like to play again? (y/n)"
 
         play_again = raw_input("> ")

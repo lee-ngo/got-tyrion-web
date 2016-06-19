@@ -93,7 +93,7 @@ class TheVale(Scene):
             print "Kingdoms, who would be willing to sacrifice their life"
             print "for yours besides Jaime?"
             print "\n"
-            print "Bronn: \"I'll do it, guess.\""
+            print "Bronn: \"I'll do it, I guess.\""
             print "\n"
 
             raw_input("Press ENTER to continue...")

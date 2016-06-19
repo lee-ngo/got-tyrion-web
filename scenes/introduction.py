@@ -3,6 +3,7 @@ from setup.scene import Scene # do i have to do this every time?
 class Introduction(Scene):
 
     def enter(self):
+        print "-|" * 20
         print "\n"
         print "Welcome to this Game of Thrones text adventure!"
         print "In this game, you are TYRION LANNISTER,"
