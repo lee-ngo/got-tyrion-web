@@ -20,7 +20,7 @@ class Winterfell(Scene):
         print "Or do you go to a BROTHEL to ease your troubled mind?"
         print "\n"
         choice = raw_input("> ")
-        choice.lower()
+        choice = choice.lower()
 
         if choice == "jon snow":
             return 'the_wall'
