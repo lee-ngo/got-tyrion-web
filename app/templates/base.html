@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title %}
+      <title>{{ title }} | GoT ft. Tyrion</title>
+    {% else %}
+      <title>GoT ft. Tyrion</title>
+    {% endif %}
+</head>
+<!-- Below is how Python helps us pass content from page to page.   -->
+<body>
+    <header></header>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }} </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+
+    <footer>
+      This Game of Thrones text adventure is a free, open-source project by Lee Ngo. It is meant entirely for educational and satirical purposes. Have fun with it!
+    </footer>
+    <!-- JavaScript global APIs -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" href="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
