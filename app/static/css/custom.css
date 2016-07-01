@@ -1,0 +1,12 @@
+.hidden {
+  display:none;
+}
+
+.visible {
+  display:block;
+}
+
+.fell-english {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 18px;
+}

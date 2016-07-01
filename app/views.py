@@ -25,6 +25,14 @@ def winterfell():
 def the_wall():
     return render_template('the_wall.html', title='The Wall', header='The Wall')
 
-@app.route('/northern_brothel')
-def northern_brothel():
-    return render_template('northern_brothel.html', title='Northern Brothel')
+@app.route('/brothel')
+def brothel():
+    return render_template('brothel.html', title='Brothel')
+
+@app.route('/tavern')
+def tavern():
+    return render_template('tavern.html', title='Tavern')
+
+@app.route('/death')
+def death():
+    return render_template('death.html', title='You died.')

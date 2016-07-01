@@ -6,10 +6,18 @@
     {% else %}
       <title>GoT ft. Tyrion</title>
     {% endif %}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/custom.css')}}
+    />
+    <!-- A little bit of an Fell English font -->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
 </head>
 <!-- Below is how Python helps us pass content from page to page.   -->
-<body>
-    <header></header>
+<body class="container fell-english">
+    <header>
+      <h1>Game of Thrones: The Chronicles of Tyrion Lannister</h1>
+    </header>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul>
@@ -26,6 +34,7 @@
     </footer>
     <!-- JavaScript global APIs -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" href="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 </html>
