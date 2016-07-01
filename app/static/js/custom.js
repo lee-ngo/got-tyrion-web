@@ -25,18 +25,10 @@ $( document ).ready(function(){
     $( this ).parent().hide();
   })
 
-  // $('#show-the-wall-p2').click(function(){
-  //   $('#the-wall-p2').show();
-  //   $('$the-wall-p1').hide();
-  // });
-  //
-  // $('#show-the-wall-p3').click(function(){
-  //   $('#the-wall-p2').hide();
-  //   $('#the-wall-p3').show();
-  // });
-  //
-  // $('#show-the-wall-p4').click(function(){
-  //   $('#the-wall-p3').hide();
-  //   $('#the-wall-p4').show();
-  // });
+// jquery to show/hide the random girl in brothel
+  $('#choose-random-girl').click(function(){
+    $('#random-girl').removeClass('hidden');
+    $( this ).parent().hide();
+  })
+
 });

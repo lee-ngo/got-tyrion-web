@@ -27,12 +27,16 @@ def the_wall():
 
 @app.route('/brothel')
 def brothel():
-    return render_template('brothel.html', title='Brothel')
+    return render_template('brothel.html', title='Northern Brothel')
 
 @app.route('/tavern')
 def tavern():
-    return render_template('tavern.html', title='Tavern')
+    return render_template('tavern.html', title='Northern Tavern')
 
 @app.route('/death')
 def death():
-    return render_template('death.html', title='You died.')
+    return render_template('death.html', title='You have died.')
+
+@app.route('/the_vale')
+def the_vale():
+    return render_template('the_vale.html', title='The Vale')

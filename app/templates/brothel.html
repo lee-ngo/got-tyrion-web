@@ -1,16 +1,95 @@
 {% extends "base.html" %}
 {% block content %}
-<img src="https://media.giphy.com/media/sKOgxXbdm8Bb2/giphy.gif" />
-<p>
-  Ah, there's nothing quite like a brothel! While not up to the standards of a Petyr 'Littlefinger' Baelish establishment, the charm of the Northern women is enough to thaw the frost you've been feeling since you've arrived.
-</p>
-<p>
-The madam of the establishment, ROS, walks out in a flowing robe that leaves very little to the imagination. She claps her hands and a row of young maidens walks into the main room, one more beautiful than the last.
-</p>
-<p>
-Ros: "Lord Tyrion, welcome! Which of these fine ladies do you choose?"
-</p>
-<p>
-Do you select ROS or a RANDOM woman?
-</p>
+<div>
+  <img src="http://cdn.hbowatch.com/wp-content/uploads/2013/04/Game-of-Thrones-S3E4-10.jpg" />
+  <p>
+    Ah, there's nothing quite like a brothel! The charm of the Northern women is enough to thaw the frost you've been feeling since you've arrived.
+  </p>
+  <p>
+  The madam of the establishment, ROS, walks out in a flowing robe that leaves very little to the imagination. She claps her hands and a row of young maidens walks into the main room, one more beautiful than the last.
+  </p>
+  <p>
+  Ros: "Lord Tyrion, welcome! Which of these fine ladies do you choose?"
+  </p>
+  <p>
+  Do you select ROS or a RANDOM woman?
+  </p>
+<button class="next-scene-click">Choose Ros</button>
+<button id="choose-random-girl">Random!</button>
+</div>
+<!-- Scenes of night with Ros -->
+
+<div class="hidden">
+  <p>
+    Ros blushes at the audacity of your choice. "Lord Tyrion, you flatter me. However, I cannot abide. I'm afraid the madam of the house is not for sale."
+  </p>
+  <img src="http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/ros-1024.jpg" />
+  <p>
+    You: "Everything's for sale, milady. Especially when you're a Lannister.
+  </p>
+  <button class="next-scene-click">Click to continue...</button>
+</div>
+<div class="hidden">
+  <p>
+    You throw an additional bag of gold on the table. Ros' eyes widen. "Very well, milord. Please come with me."
+  </p>
+  <img src="http://images5.fanpop.com/image/polls/1065000/1065199_1341149170278_full.jpg" />
+  <p>
+  You walk with raised anticipation to a private room with Ros. As she undresses in front of you, you feel a swell of excitement and pour more wine.
+  </p>
+  <button class="next-scene-click">Click to continue...</button>
+</div>
+<div class="hidden">
+  <p>
+    BOOM! Your brother JAIME storms into the room. Perfect timing as always.
+  </p>
+  <img src="http://images4.fanpop.com/image/photos/23500000/Jaime-Lannister-jaime-lannister-23516170-500-281.gif" />
+  <p>
+    Jaime: "Forgive me, little brother. Pressing matters at hand."
+  </p>
+  <p>
+    You: "You are certainly not forgiven. What could it be, Ser Jaime?"
+  </p>
+  <p>
+    Jaime: "You've been asked to join the party heading to The Wall."
+  </p>
+    <button class="next-scene-click">Click to continue...</button>
+</div>
+<div class="hidden">
+    <img src="https://media.giphy.com/media/sKOgxXbdm8Bb2/giphy.gif" />
+    <p>
+    You: "And what would I be doing at The Wall?"
+   </p>
+   <p>
+    Jaime: "Meet with the Night's Watch. Provide a full report to the Small Council upon your return to King's Landing."
+   </p>
+   <p>
+    You sigh and begin to gather your clothes. Ros looks back at you, confused. "And now my watch begins...."
+  </p>
+    <button onclick="window.location='/the_wall'">To The Wall</button>
+  </p>
+</div>
+<!-- Scenes for random girl selection -->
+<div id="random-girl" class="hidden">
+  <p>Ros: "Excellent choice, Lord Tyrion."
+  </p>
+  <img src="http://cdn2.crushable.com/wp-content/uploads/2014/06/shae-dancing-got.gif" />
+  <p>
+    A young maiden escorts you to one of their finest rooms. Before you remove your clothes, however, the maiden pulls a dagger and slits your throat!
+  </p>
+<button class="next-scene-click">Click to continue...</button>
+</div>
+<div class="hidden">
+  <p>
+  Before taking all of your gold, she looks down upon your slowly draining corpse and smiles wickedly.
+  </p>
+  <img src="http://vignette2.wikia.nocookie.net/gameofthrones/images/4/45/Dagger.png/revision/latest?cb=20110625112043" />
+  <p>
+  Woman: "A Lannister always pays his debts."
+  </p>
+  <p>
+  Turns out you choose the one woman who had a score to settle with your family a long time ago.
+  </p>
+<button onclick="window.location='death'">Click to continue...</button>
+</div>
 {% endblock %}

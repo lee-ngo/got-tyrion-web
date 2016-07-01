@@ -1,3 +1,7 @@
+body {
+  background-color: #ffffff;
+}
+
 .hidden {
   display:none;
 }
@@ -6,7 +10,26 @@
   display:block;
 }
 
-.fell-english {
+body.fell-english {
   font-family: 'IM Fell English SC', serif;
   font-size: 18px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+button {
+  color: #000000;
+}
+
+img {
+  width: 100%;
+}
+
+div.text-background {
+  background-color: #101010;
+  max-width: 45%;
+}
+
+footer {
+  padding-top: 50px;
 }
