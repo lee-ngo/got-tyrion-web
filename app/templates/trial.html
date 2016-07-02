@@ -1,4 +1,33 @@
 {% extends "base.html" %}
 {% block content %}
+<div id="combat-page">
+  <p>
+  The trial by combat has begun! You now control BRONN's actions. Choose your attack option below. Good luck!
+  </p>
+  <img src="https://i.ytimg.com/vi/NN30YMzja6Y/hqdefault.jpg"/ >
+  <div id="battle-update"></div>
+  <p>Bronn's Health: <span id="bronn-health"></span></p><p>Vardis's Health: <span id="vardis-health"></span></p>
+  <button id="slash">Slash</button>
+  <button id="thrust">Thrust</button>
+  <button id="block">Block</button>
+</div>
+
+<div id="bronn-loses" class="hidden">
+  <img src="" />
+    <p>
+      With one fell swoop, Bronn was defeated by Ser Vardis. The court of The Vale cheers as they throw Bronn's body print out the moon door.
+    </p>
+    <p>
+      Lysa: "The gods have spoken, and justice will be served to my dear sister Catelyn."
+    </p>
+    <p>
+      The soldiers of The Vale grab you as well. You pray that you will land on Bronn's body... not that it will matter.
+    </p>
+    <button onclick="window.location='/death'">Click here to continue...</button>
+</div>
+
+<div id="bronn-wins" class="hidden">
+  <h1>Bronn wins</h1>
+</div>
 
 {% endblock %}

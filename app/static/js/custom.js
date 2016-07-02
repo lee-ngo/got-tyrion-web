@@ -1,7 +1,5 @@
 $( document ).ready(function(){
 
-//  window.alert("Your jQuery is working!");
-
   $('.next-scene-click').click(function(){
     $( this ).parent().next().removeClass('hidden');
     $( this ).parent().hide();
@@ -35,9 +33,14 @@ $( document ).ready(function(){
     $('#choose-tyrion').removeClass('hidden');
     $( this ).parent().hide();
   })
-
+// jquery for choosing jaime
   $('#go-choose-jaime').click(function(){
     $('#choose-jaime').removeClass('hidden');
+    $( this ).parent().hide();
+  })
+// jquery for choosing bronn
+  $('#go-choose-bronn').click(function(){
+    $('#choose-bronn').removeClass('hidden');
     $( this ).parent().hide();
   })
 });
