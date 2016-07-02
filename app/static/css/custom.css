@@ -21,13 +21,17 @@ button {
   color: #000000;
 }
 
+input {
+  color: #000000;
+}
+
 img {
   width: 100%;
 }
 
 div.text-background {
   background-color: #101010;
-  max-width: 45%;
+  max-width: 60%;
 }
 
 footer {

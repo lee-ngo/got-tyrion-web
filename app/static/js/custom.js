@@ -1,6 +1,6 @@
 $( document ).ready(function(){
 
-  window.alert("Your jQuery is working!");
+//  window.alert("Your jQuery is working!");
 
   $('.next-scene-click').click(function(){
     $( this ).parent().next().removeClass('hidden');
@@ -30,5 +30,14 @@ $( document ).ready(function(){
     $('#random-girl').removeClass('hidden');
     $( this ).parent().hide();
   })
+// jquery to choose tyrion as champion
+  $('#go-choose-tyrion').click(function(){
+    $('#choose-tyrion').removeClass('hidden');
+    $( this ).parent().hide();
+  })
 
+  $('#go-choose-jaime').click(function(){
+    $('#choose-jaime').removeClass('hidden');
+    $( this ).parent().hide();
+  })
 });

@@ -2,13 +2,106 @@
 {% block content %}
 
 <div>
+    <p>
+      You put up no resistance as the Northerners converge upon you.
+    </p>
+    <img src="https://31.media.tumblr.com/be8855cadaddd06106f17ef3a2b4d4cc/tumblr_n5ab9lqOQi1qc58cto1_250.gif" />
+    <p>
+      In a few days, you reach The Vale ane make your way to The Eyrie, one of the most formidable and beautiful castles in all of the Seven Kingdoms. Your hands are bound by rope as you are tugged along by Catelyn Stark. Not too far back is Bronn, who is also tied at the wrists but not particularly worried about his present situation.
+    </p>
+    <button class="next-scene-click">Click to continue...</button>
+</div>
+<div class="hidden">
+  <img src="http://lightlybuzzed.com/files/2014/05/Lysa.gif" />
   <p>
-    You put up no resistance as the Northerners converge upon you."
+  The Vale is controlled by LYSA ARRYN, widow to the late Jon Arryn and previous Hand of the King until he was mysteriously poisoned. Lysa is obviously a little removed from reality, as evident by her continued breastfeeding of her ten-year-old son, the equally daft ROBYN."
   </p>
   <p>
-    In a few days, you reach The Vale, one of the most formidable and beautiful castles in all of the Seven Kingdoms. Your hands are bound by rope as you are tugged along by Catelyn Stark. Not too far back is Bronn, who is also tied at the wrists but not particularly worried about his present situation.
+  Lysa: "Dear sister, it has been far too long. What brings you to The Vale, and with captives, no less?"
   </p>
   <button class="next-scene-click">Click to continue...</button>
+</div>
+<div class="hidden">
+  <img src="http://images4.fanpop.com/image/photos/22800000/Catelyn-catelyn-tully-stark-22809917-312-176.gif" />
+  <p>
+    Cat:"I seek justice for the attempted murder of my son. I have proof that Tyrion Lannister conspired to send an assassin to my crippled son's bedchamber."
+  </p>
+  <p>
+    Lysa is clearly startled by the accusation and immediately sympathizes with her sister, sending you a look of contempt. This was not off to a good start for you."
+  </p>
+  <button class="next-scene-click">Click here to continue...</button>
+</div>
+
+<div class="hidden">
+  <img src="https://thoughtcatalog.files.wordpress.com/2013/05/house-arryn.gif" />
+  <p>
+    Lysa: "It is obvious that Tyrion Lannister is guilty. Look at him. That is clearly the disposition of a murderer. As Lady Regent of The Vale, I hereby find you guilty--"
+  </p>
+  <p>
+    You: "WAIT! I demand a trial by combat!"
+  </p>
+  <button class="next-scene-click">Click here to continue...</button>
+</div>
+
+<div class="hidden">
+  <img src="http://img1.rnkr-static.com/user_node_img/50011/1000203352/full/lysa-tully-breastfeeds-her-tween-son-photo-u1.jpg" />
+  <p>
+    Cat: "A trial by combat? How absurd!"
+  </p>
+  <p>
+    Lysa: "I'm afraid he is within his rights to demand one. Let's get on with it then. Choose your champion, Imp."
+  </p>
+  <p>
+    You boil every time someone calls you that. Who will be your champion: JAIME, BRONN, or TYRION?
+  </p>
+  <button id="go-choose-jaime">Jaime</button>
+  <button onclick="window.location='/trial'">Bronn</button>
+  <button id="go-choose-tyrion">Tyrion</button>
+</div>
+
+<div id="choose-jaime" class="hidden">
+  <img src="http://img.photobucket.com/albums/0903/clayseason/game%20of%20thrones/locations/the%20vale/eyrie/eyriethroneroom3.jpg" />
+  <p>
+    You: "I choose Jaime Lannister as my champion."
+  </p>
+  <p>
+    The rest of the court murmurs. 'The Kingslayer' as he is known throughout the Seven Kingdoms was renowned for his swordplay, and surely he would come to his little brother's aid.
+  </p>
+  <p>
+    Lysa: "We cannot honor that choice. Jaime Lannister's whereabouts are unknown, and trials by combat must be carried out within three days. Choose another."
+  </p>
+  <p>You: "Do I have any volunteers?"
+  </p>
+  <button onclick="window.location='/trial'">Click here to continue...</button>
+</div>
+<div id="choose-tyrion" class="hidden">
+  <img src="https://s-media-cache-ak0.pinimg.com/564x/7f/eb/16/7feb165a478eccdf39ceb1d778ba8716.jpg" />
+  <p>
+    You: "I choose myself as champion."
+  </p>
+  <p>
+    The Vale court erupts with laughter. Even Bronn can't help but contain his snickers.
+  </p>
+  <p>
+    Lysa: "Let's just save us all time. Guards!"
+  </p>
+  <p>
+    The knights grab you by the arms and vastly overpower you.
+  </p>
+  <p>
+    Robyn: "Make the little man fly!"
+  </p>
+  <button class="next-scene-click">Click here to continue...</button>
+</div>
+<div class="hidden">
+  <img src="http://25.media.tumblr.com/tumblr_m6i7gcyjsn1qbar1do6_r1_250.gif" />
+  <p>
+    The guards throw you out the MOON DOOR, a hole in the middle of the castle that sends any unlucky soul to a brutal death upon the rocky mountains below.
+  </p>
+  <p>
+    Today, that unlucky soul is you."
+  </p>
+  <button onclick="window.location='/death'">Click here to continue...</button>
 </div>
 
 {% endblock %}

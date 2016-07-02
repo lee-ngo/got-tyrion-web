@@ -40,3 +40,7 @@ def death():
 @app.route('/the_vale')
 def the_vale():
     return render_template('the_vale.html', title='The Vale')
+
+@app.route('/trial')    
+def trial():
+    return render_template('trial.html',title="Trial by Combat")
