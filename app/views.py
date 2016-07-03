@@ -3,6 +3,10 @@ from app import app
 from .forms import InputField, LoginForm
 
 @app.route('/')
+@app.route('/intro')
+def intro():
+    return render_template('intro.html', title='Introduction')
+
 @app.route('/login', methods=['GET','POST'])
 def login():
     form = LoginForm()
@@ -12,18 +16,14 @@ def login():
         return redirect('/intro')
     return render_template('login.html',title="Login",form=form)
 
-@app.route('/intro')
-def intro():
-    return render_template('intro.html', title='Introduction', header='Introduction')
-
 @app.route('/winterfell', methods=['GET','POST'])
 def winterfell():
     form = InputField()
-    return render_template('winterfell.html', title='Winterfell', header='Winterfell', form=form)
+    return render_template('winterfell.html', title='Winterfell')
 
 @app.route('/the_wall')
 def the_wall():
-    return render_template('the_wall.html', title='The Wall', header='The Wall')
+    return render_template('the_wall.html', title='The Wall')
 
 @app.route('/brothel')
 def brothel():
@@ -51,4 +51,4 @@ def kings_landing():
 
 @app.route('/small_council')
 def small_council():
-    return render_template('small_council.html',title="Small Council")    
+    return render_template('small_council.html',title="Small Council")
