@@ -4,7 +4,7 @@
   <p>
   The trial by combat has begun! You now control BRONN's actions. Choose your attack option below. Good luck!
   </p>
-  <img src="https://i.ytimg.com/vi/NN30YMzja6Y/hqdefault.jpg"/ >
+  <img src="http://cdn.fansided.com/wp-content/blogs.dir/319/files/2016/05/Bronn-1.gif" / >
   <div id="battle-update"></div>
   <p>Bronn's Health: <span id="bronn-health"></span></p><p>Vardis's Health: <span id="vardis-health"></span></p>
   <button id="slash">Slash</button>
@@ -13,7 +13,8 @@
 </div>
 
 <div id="bronn-loses" class="hidden">
-  <img src="" />
+  <h2>You lose...</h2>
+  <img src="http://spoonuniversity.com/wp-content/uploads/2015/03/tumblr_lwydhlrMXz1r1ie09o1_500.gif" />
     <p>
       With one fell swoop, Bronn was defeated by Ser Vardis. The court of The Vale cheers as they throw Bronn's body print out the moon door.
     </p>
@@ -27,7 +28,27 @@
 </div>
 
 <div id="bronn-wins" class="hidden">
-  <h1>Bronn wins</h1>
+  <h2>You win!</h2>
+  <img src="https://grizzlybomb.files.wordpress.com/2011/05/got-2-6-5.gif" />
+  <p>With a decisive blow, Bronn stabs Ser Vardis through his neck and kicks his body through the Moon Door. You clench your fists in triumph.
+  </p>
+  <p>
+  Lysa: (gasping) "You fight without honor!"
+  </p>
+  <button class="next-scene-click">Click here to continue...</button>
+</div>
+<div class="hidden">
+  <p>
+  Bronn shrugs and points out the Moon Door.
+  </p>
+  <img src="https://38.media.tumblr.com/6b16271969a76f9ae0f7e804404cea80/tumblr_mhcxdrgYrq1qemrd6o3_250.gif" />
+  <p>
+  Bronn walks over to you and finally frees your hands.
+  </p>
+  <p>
+  Bronn: "Shall we head home now, milord?"
+  </p>
+  <button onclick="window.location='/kings_landing'">Click here to continue...</button>
 </div>
 
 {% endblock %}

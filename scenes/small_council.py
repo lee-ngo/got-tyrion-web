@@ -40,7 +40,7 @@ class SmallCouncil(Scene):
         raw_input("Press ENTER to continue...")
         print "\n"
 
-        print "Renly rolls his eyes at his old brother's obsession with"
+        print "Renly rolls his eyes at his older brother's obsession with"
         print "proper grammar."
         print "\n"
         print "Littlefinger: \"To get to the point, the Kingdom needs"

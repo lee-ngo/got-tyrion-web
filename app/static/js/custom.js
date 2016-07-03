@@ -43,4 +43,10 @@ $( document ).ready(function(){
     $('#choose-bronn').removeClass('hidden');
     $( this ).parent().hide();
   })
+// jquery for accepting hand position
+  $('#accept-hand').click(function(){
+    $('#hand-king').removeClass('hidden');
+    $( this ).parent().hide();
+  })
+
 });

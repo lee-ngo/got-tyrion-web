@@ -41,6 +41,14 @@ def death():
 def the_vale():
     return render_template('the_vale.html', title='The Vale')
 
-@app.route('/trial')    
+@app.route('/trial')
 def trial():
     return render_template('trial.html',title="Trial by Combat")
+
+@app.route('/kings_landing')
+def kings_landing():
+    return render_template('kings_landing.html',title="King's Landing")
+
+@app.route('/small_council')
+def small_council():
+    return render_template('small_council.html',title="Small Council")    

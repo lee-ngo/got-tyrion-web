@@ -12,7 +12,7 @@ body {
 
 body.fell-english {
   font-family: 'IM Fell English SC', serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
   background-color: #000000;
 }
@@ -25,13 +25,14 @@ input {
   color: #000000;
 }
 
-img {
-  width: 100%;
-}
-
 div.text-background {
   background-color: #101010;
   max-width: 60%;
+}
+
+img {
+  width: 75%;
+  height: 250px;
 }
 
 footer {
