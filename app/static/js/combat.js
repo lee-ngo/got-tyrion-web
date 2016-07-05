@@ -22,7 +22,7 @@ $( document ).ready(function(){
     vardis_choice = Math.random();
     if (vardis_choice <= 0.33) {
       vardis_choice = "SLASH";
-      bronn_health -= 3;
+      bronn_health -= 2;
       vardis_health -= 2;
     } else if (vardis_choice <= 0.66) {
       vardis_choice = "THRUST";
@@ -49,7 +49,7 @@ $( document ).ready(function(){
     vardis_health -= 1;
     if (vardis_choice <= 0.33) {
       vardis_choice = "SLASH";
-      bronn_health -= 3;
+      bronn_health -= 2;
     } else if (vardis_choice <= 0.66) {
       vardis_choice = "THRUST";
       bronn_health -= 1;
