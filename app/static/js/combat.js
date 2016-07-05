@@ -26,7 +26,7 @@ $( document ).ready(function(){
       vardis_health -= 2;
     } else if (vardis_choice <= 0.66) {
       vardis_choice = "THRUST";
-      vardis_health -= 1;
+      vardis_health -= 2;
       bronn_health -= 1;
     } else {
       vardis_choice = "BLOCK";
@@ -62,7 +62,7 @@ $( document ).ready(function(){
 
     if (vardis_health <= 0 && bronn_health > 0) {
       bronn_victory();
-    } else if (bronn_health <= 0 && vardis_health > 0) {
+    } else if (bronn_health <= 0 && vardis_health >= 0) {
       bronn_defeat();
     } else {
     };
