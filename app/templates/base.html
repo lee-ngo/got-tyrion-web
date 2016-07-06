@@ -14,11 +14,13 @@
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
 </head>
 <!-- Below is how Python helps us pass content from page to page.   -->
-<body class="container fell-english">
-    <header>
+<body class="fell-english">
+<div class="row header">
+    <header class="container">
       <h1>Game of Thrones</h1>
       <h4>The Chronicles of Tyrion Lannister</h4>
     </header>
+</div>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul>
@@ -28,12 +30,13 @@
     </ul>
     {% endif %}
     {% endwith %}
+
+    <div class="container text-background">
     <h2>{{ title }}</h2>
-    <div class="text-background">
       {% block content %}
       {% endblock %}
     </div>
-    <footer>
+    <footer class="container">
       This Game of Thrones text adventure is a free, open-source project by Lee Ngo. It is meant entirely for educational and satirical purposes. Have fun with it!
     </footer>
     <!-- JavaScript global APIs -->

@@ -37,7 +37,7 @@ $( document ).ready(function(){
     // conditional that outlines win/lose
     if (vardis_health <= 0 && bronn_health > 0) {
       bronn_victory();
-    } else if (bronn_health <= 0 && vardis_health > 0) {
+    } else if (bronn_health <= 0 && vardis_health >= 0) {
       bronn_defeat();
     } else {
     };
@@ -83,7 +83,7 @@ $( document ).ready(function(){
     $('#battle-update').text("You chose BLOCK and Vardis chose "+vardis_choice+"!");
     if (vardis_health <= 0 && bronn_health > 0) {
       bronn_victory();
-    } else if (bronn_health <= 0 && vardis_health > 0) {
+    } else if (bronn_health <= 0 && vardis_health >= 0) {
       bronn_defeat();
     } else {
     };

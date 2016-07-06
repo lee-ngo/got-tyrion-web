@@ -12,13 +12,20 @@ body {
 
 body.fell-english {
   font-family: 'IM Fell English SC', serif;
-  font-size: 14px;
+  font-size: 18px;
   color: #ffffff;
   background-color: #000000;
 }
 
 button {
   color: #000000;
+  padding: 5px 10px 5px 10px;
+  height:30px;
+  position:relative;
+}
+
+.header {
+  background-color: #52240D;
 }
 
 input {
@@ -26,13 +33,19 @@ input {
 }
 
 div.text-background {
-  background-color: #101010;
-  max-width: 60%;
+  background-color: #1f1f1f;
+  max-width: 100%;
+}
+
+.button-div {
+  float:right;
 }
 
 img {
-  width: 75%;
-  height: 250px;
+  width: 60%;
+  height: 60%;
+  float:left;
+  margin-right: 10px;
 }
 
 footer {

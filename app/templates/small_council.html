@@ -84,7 +84,7 @@
     <p>
       Do you ACCEPT or DECLINE the position of Hand of the King?
     </p>
-    <button id="accept-hand">ACCEPT</button>
+    <button onclick="window.location='/success'">ACCEPT</button>
     <button class="next-scene-click">DECLINE</button>
 </div>
 
@@ -102,14 +102,5 @@
   <button onclick="window.location='/death'">Click to continue...</button>
 </div>
 
-<div id="hand-king" class="hidden">
-  <img src="http://lovelace-media.imgix.net/uploads/359/3389fa40-0767-0133-5029-0ec273752cbd.gif" />
-  <p>
-    And so, Tyrion Lannister, son of Tywin Lannister, was named Hand of the King. With the support of multiple houses, he managed to lead Westeros into a new era of peace and prosperity, only to be overwhelmed by a frozen zombie army from beyond The Wall and an orphan blonde woman commanding three dragons and a barbarian horde."
-  </p>
-  <h2>YOU WIN!</h2>
-  <button onclick="location='/intro'">Play Again?</button>
-  <a href="https://github.com/lee-ngo" target="_blank"><button>Who made this silly game?</button></a>
-</div>
 
 {% endblock %}

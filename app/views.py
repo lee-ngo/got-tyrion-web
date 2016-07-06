@@ -52,3 +52,7 @@ def kings_landing():
 @app.route('/small_council')
 def small_council():
     return render_template('small_council.html',title="Small Council")
+
+@app.route('/success')
+def success():
+    return render_template('success.html',title="You win!")
