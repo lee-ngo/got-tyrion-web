@@ -7,9 +7,11 @@
   </p>
   <div id="battle-update"></div>
   <p>Bronn's Health: <span id="bronn-health"></span></p><p>Vardis's Health: <span id="vardis-health"></span></p>
-  <button id="slash">Slash</button>
-  <button id="thrust">Thrust</button>
-  <button id="block">Block</button>
+  <div class="button-div">
+    <button id="slash">Slash</button>
+    <button id="thrust">Thrust</button>
+    <button id="block">Block</button>
+  </div>
 </div>
 
 <div id="bronn-loses" class="hidden">
@@ -24,7 +26,9 @@
     <p>
       The soldiers of The Vale grab you as well. You pray that you will land on Bronn's body... not that it will matter.
     </p>
-    <button onclick="window.location='/death'">Click here to continue...</button>
+    <div class="button-div">
+      <button onclick="window.location='/death'">Click here to continue...</button>
+    </div>
 </div>
 
 <div id="bronn-wins" class="hidden">
@@ -35,7 +39,9 @@
   <p>
   Lysa: (gasping) "You fight without honor!"
   </p>
-  <button class="next-scene-click">Click here to continue...</button>
+  <div class="button-div">
+    <button class="next-scene-click">Click here to continue...</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="https://38.media.tumblr.com/6b16271969a76f9ae0f7e804404cea80/tumblr_mhcxdrgYrq1qemrd6o3_250.gif" />
@@ -48,6 +54,8 @@
   <p>
   Bronn: "Shall we head home now, milord?"
   </p>
-  <button onclick="window.location='/kings_landing'">Click here to continue...</button>
+  <div class="button-div">
+    <button onclick="window.location='/kings_landing'">Click here to continue...</button>
+  </div>
 </div>
 {% endblock %}

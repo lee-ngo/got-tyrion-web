@@ -6,7 +6,7 @@
     Ah, there's nothing quite like a brothel! The charm of the Northern women is enough to thaw the frost you've been feeling since you've arrived.
   </p>
   <p>
-  The madam of the establishment, ROS, walks out in a flowing robe that leaves very little to the imagination. She claps her hands and a row of young maidens walks into the main room, one more beautiful than the last.
+  The madam of the establishment, ROS, walks out in a flowing robe that leaves very little to the imagination.
   </p>
   <p>
   Ros: "Lord Tyrion, welcome! Which of these fine ladies do you choose?"
@@ -14,8 +14,10 @@
   <p>
   Do you select ROS or a RANDOM woman?
   </p>
-<button class="next-scene-click">Choose Ros</button>
-<button id="choose-random-girl">Random!</button>
+  <div class="button-div">
+    <button class="next-scene-click">Choose Ros</button>
+    <button id="choose-random-girl">Random!</button>
+  </div>
 </div>
 <!-- Scenes of night with Ros -->
 
@@ -27,7 +29,9 @@
   <p>
     You: "Everything's for sale, milady. Especially when you're a Lannister."
   </p>
-  <button class="next-scene-click">Click to continue...</button>
+  <div class="button-div">
+    <button class="next-scene-click">Click to continue...</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="http://images5.fanpop.com/image/polls/1065000/1065199_1341149170278_full.jpg" />
@@ -37,13 +41,15 @@
   <p>
   You walk with raised anticipation to a private room with Ros. As she undresses in front of you, you feel a swell of excitement and pour more wine.
   </p>
-  <button class="next-scene-click">Click to continue...</button>
+  <div class="button-div">
+    <button class="next-scene-click">Click to continue...</button>
+  </div>
 </div>
 <div class="hidden">
+    <img src="http://images4.fanpop.com/image/photos/23500000/Jaime-Lannister-jaime-lannister-23516170-500-281.gif" />
   <p>
     BOOM! Your brother JAIME storms into the room. Perfect timing as always.
   </p>
-  <img src="http://images4.fanpop.com/image/photos/23500000/Jaime-Lannister-jaime-lannister-23516170-500-281.gif" />
   <p>
     Jaime: "Forgive me, little brother. Pressing matters at hand."
   </p>
@@ -53,21 +59,24 @@
   <p>
     Jaime: "You've been asked to join the party heading to The Wall."
   </p>
+  <div class="button-div">
     <button class="next-scene-click">Click to continue...</button>
+  </div>
 </div>
 <div class="hidden">
     <img src="https://media.giphy.com/media/sKOgxXbdm8Bb2/giphy.gif" />
-    <p>
+  <p>
     You: "And what would I be doing at The Wall?"
-   </p>
-   <p>
+  </p>
+  <p>
     Jaime: "Meet with the Night's Watch. Provide a full report to the Small Council upon your return to King's Landing."
-   </p>
-   <p>
+  </p>
+  <p>
     You sigh and begin to gather your clothes. Ros looks back at you, confused. "And now my watch begins...."
   </p>
+  <div class="button-div">
     <button onclick="window.location='/the_wall'">To The Wall</button>
-  </p>
+  </div>
 </div>
 <!-- Scenes for random girl selection -->
 <div id="random-girl" class="hidden">
@@ -77,7 +86,9 @@
   <p>
     A young maiden escorts you to one of their finest rooms. Before you remove your clothes, however, the maiden pulls out a DAGGER and SLITS YOUR THROAT!
   </p>
-<button class="next-scene-click">Click to continue...</button>
+  <div class="button-div">
+    <button class="next-scene-click">Click to continue...</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="http://vignette2.wikia.nocookie.net/gameofthrones/images/4/45/Dagger.png/revision/latest?cb=20110625112043" />
@@ -90,6 +101,8 @@
   <p>
   Turns out you choose the one woman who had a score to settle with your family a long time ago.
   </p>
-<button onclick="window.location='death'">Click to continue...</button>
+  <div class="button-div">
+    <button onclick="window.location='death'">Click to continue...</button>
+  </div>
 </div>
 {% endblock %}

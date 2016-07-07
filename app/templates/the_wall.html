@@ -1,11 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row">
-  <div>
-    <span>
+<div>
       <img src="https://patricksponaugle.files.wordpress.com/2014/01/game-of-thrones-tyrion-lanister.gif" />
-    </span>
-    <span>
       <p>
       Muttering along the way to The Wall, you travel with JON SNOW, bastard son of Eddard 'Ned' Stark, Lord of Winterfell and Warden of the North. Jon has opted to 'take the black,' a colloquialism for those who pledge their lives to The Night's Watch.
       </p>
@@ -15,11 +11,9 @@
       <p>
       Jon: "Why do you read so much?"
       </p>
-    </span>
-  </div>
-  <div class="button-div">
-    <button class="next-scene-click" type="button">Click to continue...</button>
-  </div>
+    <div class="button-div">
+      <button class="next-scene-click" type="button">Click to continue...</button>
+    </div>
 </div>
 <!-- <form method="post">
   <input type="text" placeholder="Say something..."name="response">
@@ -31,7 +25,9 @@
   <p>You: "Tell me, bastard. When you look at me, what do you see?"</p>
   <p>Jon looks back at you, perplexed by the question.</p>
   <p>Jon: "Is this a trick?" (Jon Snow generally knows nothing.)</p>
-  <button class="next-scene-click" type="button">Click to continue...</button>
+  <div class="button-div">
+    <button class="next-scene-click" type="button">Click to continue...</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="https://i.ytimg.com/vi/78IGcSmlvDM/maxresdefault.jpg" />
@@ -39,7 +35,9 @@
   </p>
   <p>Jon: "Until your brother killed that king.
   </p>
-  <button class="next-scene-click" type="button">Click to continue...</button>
+  <div class="button-div">
+    <button class="next-scene-click" type="button">Click to continue...</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="http://www.ranthollywood.com/wp-content/uploads/2015/05/tumblr-whetstone.gif" />
@@ -50,14 +48,18 @@
   </p>
   <p>Jon nods, slightly impressed. You resume reading your book.
   </p>
-  <button class="next-scene-click" type="button">Click to continue...</button>
+  <div class="button-div">
+    <button class="next-scene-click" type="button">Click to continue...</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="http://cultfix.co.uk/wp-content/uploads/game-of-thrones-104-2.jpg" />
   <p>In a week, you and the rest of the part arrive at The Wall. From the base at Castle Black, you stare up in amazement. The view is impressive. Miles of ice stretch in every direction. You've been invited to take the lift to the top of the wall. Would you like to go to the TOP or LEAVE Castle Black?"
   </p>
-  <button class="next-scene-click">Go to the Top</button>
-  <button onclick="window.location='/tavern'">Leave Castle Black</button>
+  <div class="button-div">
+    <button class="next-scene-click">Go to the Top</button>
+    <button onclick="window.location='/tavern'">Leave Castle Black</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="http://img.photobucket.com/albums/0903/clayseason/game%20of%20thrones/locations/the%20north%20and%20the%20wall/castle%20black/topofwall2.jpg" />
@@ -70,8 +72,10 @@
   <p>
   Do you piss off the edge of the world?
   </p>
-<button class="next-scene-click">Yes</button>
-<button id="no-piss">No</button>
+  <div class="button-div">
+    <button class="next-scene-click">Yes</button>
+    <button id="no-piss">No</button>
+  </div>
 </div>
 <div class="hidden">
   <img src="http://25.media.tumblr.com/tumblr_lom84lerJ71qh1abio1_500.gif" />
@@ -81,14 +85,15 @@
   <p>
   A strong gust of wind hits you from behind. A normal-sized man would stagger a bit. You, however, are not a normal-sized man. You are forced off the edge, falling thousands of yards down the Northern side of The Wall. Your member dangles freely as you fall to a crushing, freezing demise.
   </p>
-  <button type="button" onclick="window.location='/death'">Click to continue...</button>
+  <button class="button-div" type="button" onclick="window.location='/death'">Click to continue...</button>
   <p>
 </div>
 <div id="no-piss-off-wall" class="hidden">
   <img src="http://thenerdstash.com/wp-content/uploads/2015/04/GoT-Smile.jpg" />
   <p>"A silly idea," you reflect to yourself. Besides, whipping out your member might not be the most prudent idea from this altitude and at this temperature."
   </p>
-  <button onclick="window.location='/tavern'">Leave The Wall</button>
+
+    <button class="button-div" onclick="window.location='/tavern'">Leave The Wall</button>
 </div>
 
 {% endblock %}

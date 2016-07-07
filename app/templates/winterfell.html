@@ -1,23 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-  <span>
-      <img src="http://i.makeagif.com/media/7-04-2015/8X5fo5.gif" />
-  </span>
-  <span>
-      <p>
-      You begin your journey riding with your family and in-laws to Winterfell, your first time traveling to the North part of Westeros.
-    </p>
-    <p>
-      You ride up to WINTERFELL, the keep that maintains order in the North for centuries. The frigid air does not suit you, and you feel a tingling in your loins.
-    </p>
-    <p>
-      Do you talk to JON SNOW and head with him to The Wall, or do you go to a BROTHEL to ease your troubled mind?"
-    </p>
-  </span>
-</div>
-<div class="button-div">
+  <img src="http://i.makeagif.com/media/7-04-2015/8X5fo5.gif" />
+  <p>
+    You begin your journey riding with your family and in-laws to Winterfell, your first time traveling to the North part of Westeros.
+  </p>
+  <p>
+    You ride up to WINTERFELL, the keep that maintains order in the North for centuries. The frigid air does not suit you, and you feel a tingling in your loins.
+  </p>
+  <p>
+    Do you talk to JON SNOW and head with him to The Wall, or do you go to a BROTHEL to ease your troubled mind?"
+  </p>
+  <div class="button-div">
     <button type="button" onclick="window.location='/the_wall'">Talk to Jon Snow</button>
     <button onclick="window.location='/brothel'" type="button">Visit a Brothel</button>
+  </div>
 </div>
+
 {% endblock %}
